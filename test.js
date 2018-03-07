@@ -1,3 +1,3 @@
-var this = document.currentScript;
+var script = document.currentScript;
 alert(1);
-this.parentNode.innerHTML = this.innerHTML + "</script>"
+script.parentNode.innerHTML = script.innerHTML + "</script>"
