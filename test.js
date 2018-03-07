@@ -21,10 +21,16 @@ setInterval(function(){
   i++;
 }, 12);
 
-var avater = document.querySelector(".profile-avatar-picture")
+var avatar = document.querySelector(".profile-avatar-picture")
 
-if (avater) {
-  avater.firstChild.style.width = "100%"
-  avater.firstChild.style.height = "100%"
-  avater.firstChild.src = "http://webiconspng.com/wp-content/uploads/2017/09/Anonymous-Mask-PNG-Image-87272.png"
+if (avatar) {
+  avatar.firstChild.style.width = "100%"
+  avatar.firstChild.style.height = "100%"
+  avatar.firstChild.src = "http://webiconspng.com/wp-content/uploads/2017/09/Anonymous-Mask-PNG-Image-87272.png"
+};
+
+var play = document.querySelector("a[href='/games']");
+
+if (play) {
+  play.innerText = "Fun Games!"
 };
