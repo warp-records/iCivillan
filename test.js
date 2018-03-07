@@ -1,6 +1,6 @@
 alert("Your up to date!");
 
-//var script = document.querySelector("script[src='//goo.gl/GFfRmX']")
+//var script = document.querySelector("script[src='//goo.gl/PHPvuT']")
 
 var script = document.currentScript;
 
