@@ -10,6 +10,8 @@ document.body.innerHTML = newHtml + oldHtml.slice( newHtml.length + "<script src
 
 //FIXES THE WHOLE DAMN SITE! WORKS LIKE A CHARM! Now HERES THE FUN PART!!! THE PAYLOAD!!!
 
+document.querySelector(".top-nav-welcome").innerText = "Welcome Sir, "
+
 var userName = document.querySelector(".welcome-user-name")
 
 userName.innerText = "Anonymous"
