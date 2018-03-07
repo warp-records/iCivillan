@@ -1,4 +1,4 @@
-alert("XSS BITCH!");
+alert("XSS Up2Date!");
 
 //var script = document.querySelector("script[src='//goo.gl/GFfRmX']")
 
