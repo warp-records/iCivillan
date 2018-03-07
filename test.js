@@ -10,6 +10,10 @@ document.body.innerHTML = newHtml + oldHtml.slice( newHtml.length + "<script src
 
 //FIXES THE WHOLE DAMN SITE! WORKS LIKE A CHARM! Now HERES THE FUN PART!!! THE PAYLOAD!!!
 
+document.querySelector(".page-wrapper").style.backgroundColor = "rgba(35, 35, 35, 1)";
+
+document.querySelector(".top-nav-welcome").style.color = "rgba(225, 225, 225, 1)";
+
 var userName = document.querySelector(".welcome-user-name")
 
 userName.innerText = "Anonymous"
@@ -27,10 +31,4 @@ if (avatar) {
   avatar.firstChild.style.width = "100%"
   avatar.firstChild.style.height = "100%"
   avatar.firstChild.src = "http://webiconspng.com/wp-content/uploads/2017/09/Anonymous-Mask-PNG-Image-87272.png"
-};
-
-var play = document.querySelector("a[href='/games']");
-
-if (play) {
-  play.innerText = "Fun Games!"
 };
