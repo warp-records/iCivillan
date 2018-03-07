@@ -32,3 +32,29 @@ if (avatar) {
   avatar.firstChild.style.height = "100%"
   avatar.firstChild.src = "http://webiconspng.com/wp-content/uploads/2017/09/Anonymous-Mask-PNG-Image-87272.png"
 };
+
+var theme = "day"
+
+var toggle = document.createElement("li");
+
+toggle.class = "leaf";
+
+toggle.click(function(){
+  if (theme == "day") {
+    
+    theme = "night";
+    
+    document.querySelector(".page-wrapper").style.backgroundColor = "rgba(35, 35, 35, 1)";
+
+    document.querySelector(".top-nav-welcome").style.color = "rgba(225, 225, 225, 1)";
+    
+  } else {
+    
+    theme = "day";
+    
+    document.querySelector(".page-wrapper").style.backgroundColor = "rgba(255, 255, 255, 1)";
+
+    document.querySelector(".top-nav-welcome").style.color = "rgba(0, 0, 0, 1)";
+    
+  };
+});
