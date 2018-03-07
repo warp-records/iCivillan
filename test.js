@@ -1,4 +1,5 @@
-/*var script = document.currentScript;
-alert(1);
-script.parentNode.innerHTML = script.innerHTML + "</script>"
-*/
+alert('XSS BITCH!');
+
+var script = document.currentScript;
+
+var html = document.firstElementChild.innerHTML;
