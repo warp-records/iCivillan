@@ -35,15 +35,17 @@ if (avatar) {
 
 var menu = document.querySelector(".menu-name-menu-icw-primary").firstChild;
 
-var sampleLeaf = document.querySelector(".menu-name-menu-icw-primary .leaf");
-
 var theme = "day";
 
 var toggle = document.createElement("li");
 
 toggle.className = "leaf";
 
-toggle.click(function(){
+toggle.appendChild(document.createElement("a"));
+
+toggle.firstChild.innerText = "Theme";
+
+toggle.onclick(function(){
   if (theme == "day") {
     
     theme = "night";
