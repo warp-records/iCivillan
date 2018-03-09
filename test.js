@@ -33,7 +33,7 @@ if (avatar) {
   avatar.firstChild.src = "http://webiconspng.com/wp-content/uploads/2017/09/Anonymous-Mask-PNG-Image-87272.png"
 };
 
-var menu = document.querySelector(".menu > .leaf").parentElement;
+var menu = document.querySelector(".menu-name-menu-icw-primary").firstChild
 
 var theme = "day";
 
