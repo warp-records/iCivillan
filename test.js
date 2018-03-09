@@ -12,7 +12,7 @@ document.body.innerHTML = newHtml + oldHtml.slice( newHtml.length + "<script src
 
 document.querySelector(".page-wrapper").style.backgroundColor = "rgba(35, 35, 35, 1)";
 
-document.querySelector(".page-wrapper").style.transitionDuration = "1s"
+document.querySelector(".page-wrapper").style.transitionDuration = "1s";
 
 document.querySelector(".top-nav-welcome").style.color = "rgba(225, 225, 225, 1)";
 
