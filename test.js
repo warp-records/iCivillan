@@ -45,7 +45,7 @@ toggle.appendChild(document.createElement("a"));
 
 toggle.firstChild.innerText = "Theme";
 
-toggle.onclick(function(){
+toggle.onclick = function(){
   if (theme == "day") {
     
     theme = "night";
@@ -63,6 +63,6 @@ toggle.onclick(function(){
     document.querySelector(".top-nav-welcome").style.color = "rgba(0, 0, 0, 1)";
     
   };
-});
+};
 
 menu.appendChild(toggle);
