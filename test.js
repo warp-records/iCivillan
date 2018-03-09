@@ -33,7 +33,9 @@ if (avatar) {
   avatar.firstChild.src = "http://webiconspng.com/wp-content/uploads/2017/09/Anonymous-Mask-PNG-Image-87272.png"
 };
 
-var theme = "day"
+var menu = document.querySelector(".menu > .leaf").parentElement;
+
+var theme = "day";
 
 var toggle = document.createElement("li");
 
@@ -58,3 +60,5 @@ toggle.click(function(){
     
   };
 });
+
+menu.appendChild(toggle);
