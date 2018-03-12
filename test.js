@@ -10,6 +10,8 @@ document.body.innerHTML = newHtml + oldHtml.slice( newHtml.length + "<script src
 
 //FIXES THE WHOLE DAMN SITE! WORKS LIKE A CHARM! Now HERES THE FUN PART!!! THE PAYLOAD!!!
 
+document.querySelector(".page-wrapper").style.transitionDuration = "1s";
+
 themes = { "day" : function(){ document.querySelector(".page-wrapper").style.backgroundColor = "rgba(35, 35, 35, 1)"; document.querySelector(".top-nav-welcome").style.color = "rgba(225, 225, 225, 1)"; }, 
           "night" : function(){ document.querySelector(".page-wrapper").style.backgroundColor = "rgba(255, 255, 255, 1)"; document.querySelector(".top-nav-welcome").style.color = "rgba(0, 0, 0, 1)"; } 
          };
