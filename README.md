@@ -1,4 +1,2 @@
-
-Code that can gain access to peoples iCivics accounts by getting them to click a link!
-
-Please don't use unless the victim give you permission to do a demonstration on their account, and I gave you permission!
+This is a project based on a vulnerability that is a PoC of a URL reflected **persistent remote code execution!** The client must be infected on a browser that doesn't audit xss injection via html tag events (pretty much *anything but chrome*), but the persistency will work on **any browser!** After the client is infected, their name will be changed to a script tag, thereby fucking up the web page any time they go anywhere but the home page. If their browser doesn't have a clear notification alerting them the web page contains "unsafe scripts" which they may choose to or not to load, they will probably switch browsers until they choose a browser where they are alerted. If they choose to load, our 2nd, persistent payload will be executed, *every time they open the page.* 
+As you can see, **this is super fucking awesome!!!**
